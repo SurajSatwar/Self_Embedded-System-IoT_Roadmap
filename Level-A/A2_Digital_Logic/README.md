@@ -1,26 +1,52 @@
-Digital Logic raedme file
-# Level A.2 — Digital Logic & Signals
+# A2 – Digital Logic & Signal Basics
 
-## Goals
-- Read VIH/VIL for TTL vs CMOS and avoid level mistakes
-- Use Schmitt triggers when edges are slow/noisy
-- Do safe level shifting (5 V ↔ 3.3 V)
+##  Notes
 
-## Mini-Labs
-1) Truth tables in Falstad: NAND/XOR, screenshots in `/images/`.  
-2) Thresholds: save a table of VIH/VIL for TTL, 5V CMOS, 3.3V LVTTL.  
-3) Level shifter: BSS138 bidirectional (I²C-style). Note speed limits.  
-4) Schmitt demo: RC ramp vs Schmitt input; compare chatter vs clean edge.
+### Logic Levels
+- TTL (5V): HIGH ≥ 2.0V, LOW ≤ 0.8V
+- CMOS (3.3V): HIGH ~0.7 × Vcc, LOW ~0.3 × Vcc
+- Always check VIH/VIL in datasheet.
 
-## Notes (fill in)
-- TTL VIH/VIL: __________
-- CMOS VIH/VIL: __________
-- When to use translator ICs: __________
 
-## Lessons Learned
-- “5 V logic” is not one thing—check thresholds
-- Hysteresis prevents multiple triggers on noisy edges
-- MOSFET level shifters are for open-drain, low-speed buses
 
-## References
-- TI Logic Guide, Schmitt trigger intro (TI), SparkFun level shifting, Falstad links (see A2 notes).
+### Analog vs Digital
+- Analog: Continuous range (sensor voltages).
+- Digital: Only 0 or 1.
+
+
+
+### Schmitt Trigger
+- Adds hysteresis (two thresholds).
+- Cleans noisy, slow edges.
+- Prevents false triggers.
+
+
+
+### Level Shifting
+- Required when devices use different voltages.
+- Options:
+  - Voltage divider
+  - MOSFET-based shifter (I²C/SPI)
+  - Dedicated ICs
+
+
+
+## 🔧 Practical
+- Make truth tables (AND, OR, NOT, NAND, XOR).
+- Build MOSFET-based I²C level shifter.
+- Simulate noisy signal with Schmitt trigger.
+
+
+
+##  Summary
+- Logic thresholds vary by family.
+- Schmitt triggers stabilize signals.
+- Level shifting protects devices.
+
+
+
+##  References
+- [Logic Gate Basics](https://www.electronics-tutorials.ws/logic/logic_1.html)  
+- [Level Shifting Guide (SparkFun)](https://www.sparkfun.com/tutorials/65)  
+- [Logic Gates Explained (YouTube)](https://www.youtube.com/watch?v=CI2Xk7fLQpM)  
+- [Level Shifting for MCUs (YouTube)](https://www.youtube.com/watch?v=n9cfTnvCy-8)
