@@ -22,12 +22,6 @@ Basic Electronics Readme file
    - Try debounce times (10–50 ms) and record what works best.
 4) Optional: add RC + Schmitt trigger for hardware help.
 
-## Results
-- V_R = ____
-- I_LED = ____ mA
-- Debounce window = ____ ms
-- Notes & gotchas: ______
-
 ## Lessons Learned
 - Clean power + clean inputs = stable firmware
 - Short traces beat large decoupling values for high-frequency noise
