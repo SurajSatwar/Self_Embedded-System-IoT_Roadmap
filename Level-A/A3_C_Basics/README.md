@@ -1,27 +1,53 @@
-C Basics readme file
-# Level A.3 — C Language Basics (Embedded)
+# A3 – C Language Basics for Embedded
 
-## Goals
-- Use fixed-width types, write functions/headers cleanly
-- Understand arrays vs pointers and basic pointer arithmetic
-- Implement debounce in plain C on MCU (no Arduino wrappers)
+## 📚 Notes
 
-## Tasks
-- Practice exercises at https://www.learn-c.org/
-- Read K&R Ch. 1–5 (reference)
-- STM32: CubeMX project with GPIO and `HAL_GetTick()`-based debounce
-- Optional: UART print of press count
+### Data Types
+- Use fixed-width from `<stdint.h>`:
+  - `uint8_t` → 0–255
+  - `uint16_t` → 0–65535
+  - `int32_t` → signed large numbers
+- Why: Predictable memory use.
 
-## Code Pseudocode
-// In main loop:
-read pin -> edge detect with 30–50 ms guard -> toggle LED and count presses
+---
 
-## Lessons Learned
-- Arrays decay to pointers; mind bounds
-- Separate interface (`.h`) from implementation (`.c`)
-- Avoid busy-waits when possible; millis-style timing is friendlier
+### Control Flow
+- `if-else`: decisions
+- `for`, `while`: loops
+- `switch-case`: multiple conditions
 
-## References
-- Learn-C.org (interactive)
-- K&R book
-- Tutorialspoint headers overview / StackOverflow thread
+---
+
+### Functions & Headers
+- `.h` → declarations, macros
+- `.c` → implementation
+- Modular code structure = easier debugging.
+
+---
+
+### Arrays & Pointers
+- Array = collection of values.
+- Pointer = stores memory address.
+- In embedded: often point to registers or buffers.
+
+---
+
+## 🔧 Practical
+- Bare-metal Blink LED + Button counter.
+- Increment counter when button pressed.
+- Print counter over UART.
+
+---
+
+## 📌 Summary
+- Fixed-width types avoid confusion.
+- `.h` + `.c` organization is essential.
+- Arrays + pointers = hardware access.
+
+---
+
+## 📎 References
+- [Embedded C Programming Basics](https://www.geeksforgeeks.org/embedded-c-programming-introduction/)  
+- [Pointers in C (Learn-C.org)](https://www.learn-c.org/en/Pointers)  
+- [C for Embedded – FastBit Embedded (YouTube)](https://www.youtube.com/watch?v=eJ5jH2QoJ4I)  
+- [Pointers Made Easy (YouTube)](https://www.youtube.com/watch?v=2ybLD6_2gKM)
