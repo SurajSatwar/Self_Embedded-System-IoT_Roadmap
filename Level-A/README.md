@@ -5,9 +5,9 @@ This level builds the **foundation** needed before diving into advanced microcon
 
 
 
-## 📂 Modules
+##  Modules
 
-### 🔹 [A1 – Basic Electronics](./A1_Basic_Electronics/README.md)
+###  [A1 – Basic Electronics](./A1_Basic_Electronics/README.md)
 - Ohm’s Law (V = I × R)
 - Resistors, capacitors, inductors
 - Pull-up & pull-down resistors
@@ -19,7 +19,7 @@ This level builds the **foundation** needed before diving into advanced microcon
 
 
 
-### 🔹 [A2 – Digital Logic & Signal Basics](./A2_Digital_Logic/README.md)
+###  [A2 – Digital Logic & Signal Basics](./A2_Digital_Logic/README.md)
 - Logic gates (AND, OR, NOT, NAND, XOR)
 - TTL vs CMOS logic levels
 - Analog vs Digital signals
@@ -31,7 +31,7 @@ This level builds the **foundation** needed before diving into advanced microcon
 
 
 
-### 🔹 [A3 – C Language Basics for Embedded](./A3_C_Language_Basics/README.md)
+###  [A3 – C Language Basics for Embedded](./A3_C_Language_Basics/README.md)
 - Data types (`uint8_t`, `uint16_t`, `int32_t`)
 - Control flow (`if`, `for`, `while`, `switch`)
 - Functions and header files
@@ -42,22 +42,19 @@ This level builds the **foundation** needed before diving into advanced microcon
 
 
 
+####  - [A4 – Embedded C Advanced](./A4_Embedded_C_Advanced/README.md)
+I completed an **external online course** alongside this level:  
+- *Basics of Embedded C Programming* – **MindLuster**  
+- [View Certificate](./certificates/MindLuster_Basics_EmbeddedC.pdf)
+
+
+
 ##  Learning Outcomes
 By completing Level A, you will:
 - Apply **Ohm’s law** to safely design circuits.  
 - Understand **logic levels** and handle mixed-voltage systems.  
 - Write simple **embedded C code** without Arduino wrappers.  
 - Build confidence to move into **microcontrollers (Level B)**.
-
-
-
-##  Notes for Use
-- Each folder contains:
-  - **README.md** → Notes + resources
-  - **/src** → Practice code
-  - **/images** → Circuit diagrams
-- Keep committing progress as you finish each module.
-- Optionally share “Level A completed ✅” as a milestone on LinkedIn.
 
 
 
