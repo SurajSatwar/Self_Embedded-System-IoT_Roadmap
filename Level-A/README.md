@@ -45,7 +45,7 @@ This level builds the **foundation** needed before diving into advanced microcon
 ####  - [A4 – Embedded C Advanced](./A4_Embedded_C_Advanced/README.md)
 I completed an **external online course** alongside this level:  
 - *Basics of Embedded C Programming* – **MindLuster**  
-- [View Certificate](./certificates/MindLuster_Basics_EmbeddedC.pdf)
+- [View Certificate](./Mindluster_Certificate.pdf)
 
 
 
